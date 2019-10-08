@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1253">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="#" class="active"><i class="fa fa-home" aria-hidden="true"></i> ΑΡΧΙΚΗ</a>
+        <a href="#news">ΕΠΙΚΟΙΝΩΝΙΑ</a>
+        <a href="#contact">ΠΡΟΤΑΣΕΙΣ</a>
+        <a href="http://localhost/ola.php">ΠΡΟΒΛΗΜΑΤΑ</a>
+
+        <div class="dropdown">
+            <button class="dropbtn">ΜΟΙΡΑΣΟΥ
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="http://localhost/apostoli_provlimatos.php">ΕΝΑ ΠΡΟΒΛΗΜΑ</a>
+                <a href="#">ΜΙΑ ΙΔΕΑ</a>
+
+            </div>
+        </div>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <div class="container">
+
+    </div>
+
+
+    <div class="box row">
+        <form action="" method="post">
+            <div>
+                <label>*Τίτλος:</label><br>
+                <input type="text" mame="title" id="title" class="textboxes" maxlength="40" required />
+                <label>*Μήνυμα:</label><br>
+                <textarea mame="message" id="message" class="textboxes" maxlength="2500" required></textarea>
+            </div>
+            <label>Ετικέτες:</label><br>
+            <input type="checkbox" id="ola" value="ola" onclick="OlaFunction()"><label>Όλα</label><br />
+            <input type="checkbox" id="dromos" name="check_list[]" value="Δρόμος"><label>Δρόμος</label><br />
+            <input type="checkbox" id="nero" name="check_list[]" value="Νερό"><label>Νερό</label><br />
+            <input type="checkbox" id="reuma" name="check_list[]" value="Ρεύμα"><label>Ρεύμα</label><br />
+            <input type="checkbox" id="skoupidia" name="check_list[]" value="Σκουπίδια"><label>Σκουπίδια</label><br />
+            <input type="checkbox" id="hxorupansh" name="check_list[]"
+                value="Ηχορύπανση"><label>Ηχορύπανση</label><br />
+            <input type="checkbox" id="allo" name="check_list[]" value="Άλλο"><label>Άλλο</label><br />
+            <p>
+                <input type="submit" name="submit" value="Submit" onclick="ShowPost(); return false;" />
+        </form>
+    </div>
+
+
+    <div class="box row">
+        <h2>tasosgrv</h2>
+
+        <ul>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Telegram</li>
+        </ul>            
+    </div>
+
+
+    <div class="footer row">
+        Created with <i class="fa fa-heart" aria-hidden="true"></i>
+        by <a href="https://github.com/tasosgrv"><i class="fa fa-github" aria-hidden="true"></i>
+            </i>
+            Tasos Grv</a>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

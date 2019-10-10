@@ -8,11 +8,13 @@ body {
     background-size: cover;
 }
 
-div.container {
+.container {
   margin-left: 50px;
   padding: 1px 16px;
   height: 100%;
   width: 100%;
+  display: block;
+  background: grey;
 
 }
 
@@ -24,18 +26,17 @@ div.container {
 
 .box {
   float: left;
-  display: box;
+  display: block;
   color: white;
-  margin: 8px;
+  margin: 50px;
   padding: 10px 10px 10px 10px;
-  border: 1px solid #ddd;
 }
 
+/*
 .box:hover{
   box-shadow: 5px 5px 2px grey;
 }
-
-
+*/
 .textboxes{
   width: 90%;
   margin: 5px;
@@ -186,11 +187,12 @@ li {
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
 @media screen and (max-width: 400px){
 
-  .sidebar a {
-    text-align: left;
-    float: none;
+  .sidebar{
+    height: 50px; 
+    width: 100%;
   }
-  .sidebar span{
-    overflow: visible;
+
+  .sidebar a {
+    display: inline-block;
   }
 }

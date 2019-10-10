@@ -67,8 +67,8 @@ li {
 }
 
 .sidebar span {
-  font-family: 'Raleway', sans-serif;
-  font-size:14px;
+  font-family: 'Impact', sans-serif;
+  font-size:16px;
   font-weight: 400;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -102,7 +102,7 @@ li {
 
 
 .sidebar a:hover, 
-.dropdown:hover .dropbtn {
+.dropdown:hover{
   width:250px;
   text-decoration:none;
   background-color: #5ba2e9;
@@ -123,19 +123,7 @@ li {
 }
 
 .dropdown {
-  float: left;
   overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  font-size: 15px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
 }
 
 .dropdown-content {
@@ -149,6 +137,7 @@ li {
 
 .dropdown-content a {
   float: none;
+  font-family: "Tahoma", sans-serif;
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -198,7 +187,10 @@ li {
 @media screen and (max-width: 400px){
 
   .sidebar a {
-    text-align: center;
+    text-align: left;
     float: none;
+  }
+  .sidebar span{
+    overflow: visible;
   }
 }

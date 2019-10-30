@@ -70,11 +70,80 @@ button:hover{
   background: #4d94ff;
 }
 
+
+.bg-modal{
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.modal-content{
+  position: relative;
+  background: #333;
+  color: white;
+  margin: 1% auto; /* 1% from the top and centered */
+  padding: 20px;
+  width: 90%; /* Could be more or less, depending on screen size */
+  border-radius: 10px;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 0.8s;
+  animation-name: animatebottom;
+  animation-duration: 0.8s
+}
+
+.modal-content h1{
+  font-family: 'Fredoka One', cursive;
+  font-weight: bold;
+  border-bottom: 1px solid gray;
+  color: #7ab1e7;
+}
+
+.modal-content p{
+  font-family: 'Bubbler One', sans-serif;
+}
+
+.modal-content h5{
+  text-align: right;
+  border-top: 1px solid gray;
+  color: rgb(105, 105, 105);
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatebottom {
+  from {bottom:-600px; opacity:0} 
+  to {bottom:0; opacity:1}
+}
+
+@keyframes animatebottom {
+  from {bottom:-600px; opacity:0}
+  to {bottom:0; opacity:1}
+}
+
+
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(201, 0, 0);
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /*
 .box:hover{
   box-shadow: 5px 5px 2px grey;
 }
-*/
+
 .textboxes{
   width: 90%;
   margin: 5px;
@@ -85,7 +154,7 @@ textarea{
   padding: 5px;
 }
 
-
+*/
 li {
   list-style-type: none;
   font-size: 14px;
@@ -195,6 +264,10 @@ li {
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
 @media screen and (max-width: 700px) {
+  .modal-content{
+    margin: 15% auto;
+  }
+
   .sidebar {
     width: 100%;
     height: auto;
@@ -218,18 +291,5 @@ li {
   div.content {
     margin-left: 0;
     margin-top: 50px;
-  }
-}
-
-/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-@media screen and (max-width: 400px){
-
-  .sidebar{
-    height: 50px; 
-    width: 100%;
-  }
-
-  .sidebar a {
-    display: inline-block;
   }
 }

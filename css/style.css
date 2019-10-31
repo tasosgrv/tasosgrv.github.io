@@ -88,10 +88,8 @@ button:hover{
   padding: 20px;
   width: 90%; /* Could be more or less, depending on screen size */
   border-radius: 10px;
-  -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 0.8s;
-  animation-name: animatebottom;
-  animation-duration: 0.8s
+  -webkit-animation: animatebottom 0.5s ease-out ;
+  animation: animatebottom 0.5s ease-out;
 }
 
 .modal-content h1{
@@ -115,13 +113,13 @@ button:hover{
 
 /* Add Animation */
 @-webkit-keyframes animatebottom {
-  from {bottom:-600px; opacity:0} 
-  to {bottom:0; opacity:1}
+  from {transform: translateY(600px); opacity:0} 
+  to {transform: translateY(0px); opacity:1}
 }
 
 @keyframes animatebottom {
-  from {bottom:-600px; opacity:0}
-  to {bottom:0; opacity:1}
+  from {transform: translateY(600px);; opacity:0}
+  to {transform: translateY(0px); opacity:1}
 }
 
 
@@ -192,7 +190,6 @@ li {
 .sidebar, .sidebar span, .sidebar a{
   /* CSS3 Transition: */
   -webkit-transition: 0.50s;
-  /* Future proofing (these do not work yet): */
   -moz-transition: 0.50s;
   transition: 0.50s;  
 } 

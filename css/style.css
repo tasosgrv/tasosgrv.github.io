@@ -92,6 +92,17 @@ button:hover{
   animation: animatebottom 0.5s ease-out;
 }
 
+/* Add Animation */
+@-webkit-keyframes animatebottom {
+  from {transform: translateY(600px); opacity:0} 
+  to {transform: translateY(0px); opacity:1}
+}
+
+@keyframes animatebottom {
+  from {transform: translateY(600px);; opacity:0}
+  to {transform: translateY(0px); opacity:1}
+}
+
 .modal-content h1{
   font-family: 'Fredoka One', cursive;
   font-weight: bold;
@@ -110,18 +121,6 @@ button:hover{
   font-style: italic;
   font-size: 0.8em;
 }
-
-/* Add Animation */
-@-webkit-keyframes animatebottom {
-  from {transform: translateY(600px); opacity:0} 
-  to {transform: translateY(0px); opacity:1}
-}
-
-@keyframes animatebottom {
-  from {transform: translateY(600px);; opacity:0}
-  to {transform: translateY(0px); opacity:1}
-}
-
 
 .close {
   color: white;
